@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>API Weather APP</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-app">
+        <form class="search-form" id="search-form">
+          <input
+            type="search"
+            class="form-control"
+            placeholder="Type in a city..."
+            aria-label="Search"
+            aria-describedby="search-addon"
+            id="city-input"
+          />
+          <button type="submit" class= "btn" id= "primary">Search</button>
+          <button type="button" class= "btn" id="current-location">Current</button>
+        </form>
+<br>
+        <div class="card-body">
+          <h3 class="todayDate">Current weather in ....</h3>
+          <h4 class="title" id="changeCity"> Perth, WA </h4>
+          <section class="celciustemp" id="celciustemp"> 28°C</section>
+          <section class="fahrenheittemp"" id="fahrenheittemp"> 82.4 F</section>
+          <div class="col-6">
+            <ul>
+              <li>Humidity: <span id="humidity"></span>%</li>
+              <li>Wind: <span id="wind"></span> km/h</li>
+            </ul>
+          </div>
+          <div class="container mt-3">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>DAY</th>
+                  <th>CURRENTLY</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Sunday</td>
+                  <td>30°C</td>
+                </tr>
+                <tr>
+                  <td>Monday</td>
+                  <td>29°C</td>
+                </tr>
+                <tr>
+                  <td>Tuesday</td>
+                  <td>26°C</td>
+                </tr>
+                <tr>
+                  <td>Wednesday</td>
+                  <td>27°C</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <small><a href="" class="gitHub">Open-sourced</a>,   by Nina </small>
+    <script src="src/index.js"></script>
+  </body>
+</html>
